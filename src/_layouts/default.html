@@ -1,0 +1,31 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body id="{{site.data.templates.pages.extra.config.id_page_top}}">
+
+
+    {% include header.html %}
+    <div id="root"></div>
+    
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include templates/pages/extra/default_go_to_top_primary.html %}
+
+    {% include js.html %}
+   
+  </body>
+
+</html>
