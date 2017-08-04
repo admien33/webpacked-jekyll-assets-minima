@@ -47,7 +47,7 @@ bundle exec jekyll build / serve
 
 - see Gemfile, config temp :  plugin Jekyll-assets from master, fixed with jekyll 3.5,20170721
 
-
+- font-awesome asset, adapt @font-face src url : '../font/fontawesome-webfont.eot?v=4.7.0' -> 'fontawesome-webfont.eot?v=4.7.0'
 
 
 
