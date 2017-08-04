@@ -37,7 +37,7 @@ bundle exec jekyll build / serve
 
 ### demo :
 
-- [webpack-jekyll-assets-demo01](https://d2m.tech/webpack-jekyll-assets-demo01/)
+- [webpacked-jekyll-assets-minima](https://d2m.tech/webpacked-jekyll-assets-minima/)
 
 
 
