@@ -13,6 +13,7 @@ layout: compress
 {% endfor %}
 
 {% comment %}import var custom style{% endcomment %}
+{% assign var_custom_style = '' %}
 {% for var_scss in site.data.templates.var_scss_custom %}
 	{% assign key = var_scss[0] | prepend: '$' | append: ':' %}
 	{% assign value = var_scss[1] | append: ';' %}

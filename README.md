@@ -9,13 +9,13 @@
 
 ### Webpack_assets put on Jekyll src
 
-first step : generate config_assets files, export info from data/templates json config
+first step : generate _site_assets_config repo with config_assets json files (export info from data/templates)
 
 ```bash
 bundle exec jekyll build --config _config_assets.yml
 ```
 
-second step : build with webpack
+second step : build with webpack. Optimized assets are placed on : src/_assets/css_wp and /src/assets/dist (js, fonts, images)
 
 ```bash
 npm install

@@ -3,6 +3,11 @@ const fs = require('fs');
 const fse = require('fs-extra')
 const yaml = require('js-yaml');
 
+const sep_path = '/';
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 const config_yml = yaml.safeLoad(fs.readFileSync('./_config.yml', 'utf8'));
 
 const config_source = config_yml.source || './src';
@@ -40,7 +45,7 @@ fse.moveSync(path_output_css, path_dest_css, { overwrite: true });
 let assets_wp = fs.readdirSync(path.resolve(__dirname,path_ouput_wp));
 assets_wp.forEach ( (asset) => {
 	let asset_src = path.resolve(__dirname,path_ouput_wp,asset);
-	let asset_dest = path_dest_js + '/'+ asset;
+	let asset_dest = path_dest_js + sep_path+ asset;
 
 	fse.moveSync(asset_src, asset_dest, { overwrite: true });
 });
