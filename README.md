@@ -6,6 +6,8 @@
 
 - Why ? Jekyll-assets is great! But when enabling the options to compress css/js, with added gems as uglifier, autoprefixer, build time is multiplied by 2/3, depending configuration. Webpack can do the job. Then end-users just edit the content, with faster build time.
 
+- Next step, with React components and custom page assets, project [webpacked-jekyll-assets-react](https://github.com/admien33/webpacked-jekyll-assets-react)
+
 
 ### Webpack_assets put on Jekyll src
 
